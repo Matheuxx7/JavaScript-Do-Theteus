@@ -1,0 +1,32 @@
+<script>
+
+    // Exemplo-08: Crie um programa que leia uma cor do farol de transito e exiba na pagina uma mensagem usando <h1> correspondente ao significado dessa cor e altere a cor de fundo da pagina para a cor correspondente.
+
+    //document.write ('pagina --> Texto')
+    //document.bgColor = 'red'
+
+    let cor = prompt('Digite uma cor do farol de transito');
+
+    switch (cor) {
+        case 'vermelho':
+            console.log('Pare!');
+            document.write(" <h1> Pare! </h1> ")
+            document.bgColor = 'red'
+            break;
+        case 'amarelo':
+            console.log('Atenção!');
+            document.write(" <h1> Atenção </h1> ")
+            document.bgColor = 'yellow'
+            break;
+        case 'verde':
+            console.log('Siga!');
+            document.write(" <h1> Siga! </h1> ")
+            document.bgColor = 'green'
+            break;
+        default:
+            console.log('Cor inválida.');
+    }
+
+
+
+</script>
